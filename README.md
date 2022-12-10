@@ -93,8 +93,8 @@ App* app = App::GetRunningApp();
 app->Run();
 ```
 Hurray, you have created your first 2 Scenes:
-![demo](/BlenDUI/DemoImages/demo.jpg)
-![NextScene](/BlenDUI/DemoImages/demoNext.jpg.jpg)
+![demo](https://github.com/BlenDMinh/BlenDUI/blob/main/DemoImages/demo.jpg)
+![NextScene](https://github.com/BlenDMinh/BlenDUI/blob/main/DemoImages/demoNext.jpg)
 ### Text
 ### TextBox
 ### SelectionBox
