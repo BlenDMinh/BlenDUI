@@ -12,6 +12,14 @@ class Scene {
 private:
     std::vector<Component *> components;
     DrawUnit buffer;
+
+    void ClearComponents() {
+        for(Component* component : components)
+            if(component != nullptr)
+                delete component;
+        components.clear();
+    }
+
 protected:
     int sceneWidth;
     int sceneHeight;
@@ -62,9 +70,9 @@ public:
         return get_char;
     }
 
-    virtual void Start() {
-        components.clear();
-    }
+    virtual void Start() {}
 
     virtual void Update(int input = -1) {}
+
+    friend class App;
 };

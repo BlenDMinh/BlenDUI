@@ -45,6 +45,7 @@ public:
         if(loadedScenes.find(sceneName) == loadedScenes.end())
             throw "Scene with name: " + sceneName + " not loaded!\n";
         App::GetRunningApp()->scene = loadedScenes[sceneName];
+        App::GetRunningApp()->scene->ClearComponents();
         App::GetRunningApp()->scene->Start();
     }
 
@@ -60,10 +61,12 @@ public:
             delete this->scene;
         }
         this->scene = scene;
+        this->scene->ClearComponents();
         this->scene->Start();
     }
 
     void Run() {
+        this->scene->ClearComponents();
         scene->Start();
         while(true) {
             if(scene == nullptr) {
