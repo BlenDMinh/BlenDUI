@@ -32,7 +32,7 @@ This is where you add the components (Text, TextBox, SelectionBox, ...) and crea
 
 You will want to put the code you want to run from the starting of your scene inside the ```Start()``` function. ```Start``` function will be executed once everytime the scene get display on your screen.
 
-While the scene is displaying, everytime you pressed a key, the keycode will be sent to ```Update(int input)``` function. The ```Update(int input)``` will then be called once the scene get refreshed (drawing the components once again).
+While the scene is displaying, everytime you pressed a key, the keycode will be sent to ```Update(int input)``` function. The ```Update(int input)``` will then be called once and the scene get refreshed (drawing the components once again).
 
 For example: Let's create a Scene where there're a TextBox "Hello World" and a SelectionBox which tell you to press Enter to switch to a new Scene
 
